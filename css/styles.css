@@ -1,15 +1,4 @@
-@charset "UTF-8";
-@media only screen and (max-width: 600px) {
-  #products  {
-    grid-template-columns: 1;
-    background-color: yellow;
-    color: red;
-  }
-  .main-event {
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-}
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400;600;800&display=swap");
 html, body {
   margin: 0;
   padding: 0;
@@ -17,7 +6,7 @@ html, body {
 
 body {
   background-color: #ccc;
-  font-family: Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   color: #222;
 }
 
@@ -52,12 +41,12 @@ a {
 #products {
   display: grid;
   grid-template-columns: auto auto auto;
-  gap: 2rem;
-  max-width: 1200px;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 #products div {
   display: inline-grid;
-  padding: 1rem;
 }
 #products div img {
   width: 100%;
@@ -65,6 +54,36 @@ a {
 #products .main-event {
   grid-column-start: 1;
   grid-column-end: 3;
+}
+#products .product {
+  line-height: 1.5;
+}
+#products .product .product__name {
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+  font-family: "Gabarito", sans-serif;
+  font-weight: 600;
+}
+#products .product .product__category {
+  font-weight: 600;
+  background-color: #000;
+  color: #fff;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  grid-area: text;
+}
+#products .product .product__price {
+  color: #666;
+}
+#products .product .product__description {
+  font-size: 0.9rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#products a {
+  color: #222;
 }
 
 footer {
@@ -80,6 +99,20 @@ footer {
 
 footer a {
   color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  #products {
+    grid-template-columns: auto auto;
+    gap: 0;
+  }
+  .main-event {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  main {
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
