@@ -37,18 +37,21 @@ a {
     }
 }
 
-#events {
+#products {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 2rem;
+    max-width: 1200px;
     div {
         display: inline-grid;
         padding: 1rem;
+        img {
+            width: 100%;
+        }
     }
     .main-event {
-        background-color: #eee;
         grid-column-start: 1;
-        grid-column-end: 4;
+        grid-column-end: 3;
     }
 }
 
