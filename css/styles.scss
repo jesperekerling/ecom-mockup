@@ -37,6 +37,15 @@ a {
     }
 }
 
+#events {
+    display: grid;
+    grid-template-columns: 3;
+    div {
+        gap: 1rem;
+        display: inline-grid;
+    }
+}
+
 footer {
     margin: 2rem auto;
     padding: 4rem 0;
