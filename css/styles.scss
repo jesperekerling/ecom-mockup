@@ -2,6 +2,7 @@
 @import "colors";
 @import "fonts";
 
+
 // Reset of html and body
 html, body {
     margin: 0;
@@ -67,3 +68,4 @@ footer {
 footer a {
     color: $footer-link-color;
 }
+@import "mobile";
