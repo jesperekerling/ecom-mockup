@@ -1,4 +1,15 @@
 @charset "UTF-8";
+@media only screen and (max-width: 600px) {
+  #products  {
+    grid-template-columns: 1;
+    background-color: yellow;
+    color: red;
+  }
+  .main-event {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
 html, body {
   margin: 0;
   padding: 0;
@@ -69,17 +80,6 @@ footer {
 
 footer a {
   color: red;
-}
-
-@media only screen and (max-width: 500px) {
-  #products  {
-    grid-template-columns: 1fr;
-    background-color: yellow;
-  }
-  .main-event {
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */
