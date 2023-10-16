@@ -15,12 +15,33 @@ body {
     color: $primary-color;
 }
 header {
-    background-color: $header-bg-color;
-    color: $header-color;
+    background-color: $primary-color;
+    color: $bg-color;
     margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    padding: 1.3rem;
+    svg {
+        fill: #fff;
+        display: inline-block;
+        height: 40px;
+        vertical-align: middle;
+        margin-right: 0.5rem;
+    }
 }
 header a {
-    color: $header-link-color;
+    color: $accent-color;
+}
+header .logo-text {
+    font-family: "Gabarito";
+    font-size: 150%;
+    font-weight: 800;
+}
+#logo a {
+    text-decoration: none;
+    padding: 2rem;
 }
 main {
     padding: 3rem;
@@ -28,14 +49,16 @@ main {
 a {
     color: $link-color;
 }
-.active:link {
+a:hover {
+    color: $accent-color;
+}
+a.active {
     color: yellow;
 }
 
 #menu {
     list-style: none;
     margin: 0;
-    padding: 2rem;
     li {
         display: inline;
         padding-right: 1rem;
@@ -48,6 +71,15 @@ a {
     gap: 3rem;
     max-width: 1000px;
     margin: 0 auto;
+    a:hover {
+        color: $link-hover-color;
+    }
+    img:hover {
+        opacity: 0.8;
+    }
+    a.button:hover {
+        background-color: blue;
+    }
     div {
         display: inline-grid;
         img {
@@ -59,28 +91,52 @@ a {
         grid-column-end: 3;
     }
     .product {
-        line-height: 1.5;
-        .product__name {
+        background-color: #fff;
+        line-height: 1.7;
+        padding: 1rem;
+        border: 1px solid #addffb;
+        border-radius: 1rem;
+        &:hover {
+            border-color: $primary-color;
+            button {
+                background-color: #222;
+                color: #addffb;
+            }
+        }
+        &__name {
             font-weight: bold;
             font-size: 1.3rem;
-            padding-bottom: 1rem;
+            padding-bottom: 0.5rem;
             font-family: $secondary-font;
-            font-weight: 600;
+            font-weight: 800;
         }
-        .product__category {
+        &__category {
             font-weight: 600;
-            color: #FFF;
             border-radius: 1rem;
-            padding: 0.5rem 1rem;
         }
-        .product__price {
+        &__price {
             color: #666;
         }
-        .product__description {
+        &__description {
             font-size: 0.9rem;
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
+        }
+        &__link {
+            color: gray;
+            display: inline;
+        }
+        button {
+            margin-top: 1rem;
+            padding: 0.75rem 2.5rem;
+            background-color: $primary-color;
+            border: 0;
+            border-radius: 1rem;
+            color: $bg-color;
+            font-weight: 600;
+            cursor: pointer;
+            font-family: "Gabarito", sans-serif;
         }
     }
     a {
