@@ -28,6 +28,9 @@ main {
 a {
     color: $link-color;
 }
+.active:link {
+    color: yellow;
+}
 
 #menu {
     list-style: none;
@@ -66,11 +69,9 @@ a {
         }
         .product__category {
             font-weight: 600;
-            background-color: #000;
-            color: #fff;
+            color: #FFF;
             border-radius: 1rem;
             padding: 0.5rem 1rem;
-            grid-area: text;
         }
         .product__price {
             color: #666;
