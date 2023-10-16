@@ -31,6 +31,9 @@ header svg {
 
 header a {
   color: #84ccdd;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 header .logo-text {
@@ -87,14 +90,12 @@ h1 {
 #products img:hover {
   opacity: 0.8;
 }
-#products a.button:hover {
-  background-color: blue;
-}
 #products div {
   display: inline-grid;
 }
 #products div img {
   width: 100%;
+  border-radius: 0.3rem;
 }
 #products .main-event {
   grid-column-start: 1;
@@ -104,15 +105,15 @@ h1 {
   background-color: #fff;
   line-height: 1.7;
   padding: 1rem;
-  border: 1px solid #addffb;
   border-radius: 1rem;
+  box-shadow: 10px 10px 18px -10px #addffb;
 }
 #products .product:hover {
   border-color: #004368;
+  box-shadow: 10px 10px 18px -10px #8d8d8d;
 }
 #products .product:hover button {
   background-color: #222;
-  color: #addffb;
 }
 #products .product__name {
   font-weight: bold;
@@ -145,7 +146,8 @@ h1 {
   border: 0;
   border-radius: 1rem;
   color: #F1F8FD;
-  font-weight: 600;
+  font-weight: 800;
+  letter-spacing: 0.5px;
   cursor: pointer;
   font-family: "Gabarito", sans-serif;
 }
@@ -175,6 +177,8 @@ footer {
   margin: 2rem auto;
   padding: 4rem 0;
   text-align: center;
+  letter-spacing: 1px;
+  font-size: 110%;
 }
 
 footer {
