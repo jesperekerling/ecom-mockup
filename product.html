@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us - Ecommerce website</title>
+    <title>Product Page - Ecommerce website</title>
     <link rel="stylesheet" href="./css/styles.css">
         
-    <meta name="description" content="About the Super dog Shop. Read about our team and CEO">
-    <meta name="keywords" content="super, dog, shop">
+    <meta name="description" content="View product page about PRODUCT NAME.">
+    <meta name="keywords" content="">
 
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="">
+    <meta property="og:title" content="Product Page">
+    <meta property="og:description" content="View product page about PRODUCT NAME.">
+    <meta property="og:image" content="./img/products/bling-bling-dog-thumb.jpg">
+    <meta property="og:url" content="product.html">
     <meta name="twitter:card" content="summary_large_image">
 
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -27,59 +27,28 @@
         </div>
         <input id="menu-toggle" type="checkbox" />
         <label class="menu-button-container" for="menu-toggle">
-        <div class="menu-button"></div>
-      </label>
+            <div class="menu-button"></div>
+        </label>
         <ul class="menu">
             <li><a href="/">Home</a></li>
             <li>Admin: <a href="/add-product.html">Add Product</a></li>
-            <li><a href="about-us.html" class="active">About Us</a></li>
+            <li><a href="about-us.html">About Us</a></li>
             <li><a href="create-event.html#contact">Contact</a></li>
         </ul>
     </header>
     <main>
-        <h1>About Us</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed voluptatibus officia voluptatum labore dicta voluptates molestias eligendi voluptas rem, iure facere libero neque sequi! Ad itaque ut vitae doloribus quam.</p>
+        <h1>Product Page</h1>
+        <p>Mockup template for a E-commerce website.</p>
 
-        <h2>The Team</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe reiciendis laudantium eveniet. Quas, pariatur reprehenderit ex qui maiores iste corrupti. Obcaecati quam tempora esse laboriosam animi quo id ratione optio.</p>
-        <img src="img/products/splash-product-new2.jpg" width="500" alt="Our Dog team">
+        <h2>Products</h2>
 
-        <h2>Our CEO</h2>
-        <p>We are the first company with a dog as CEO.</p>
-
-        <h3>Contact our CEO</h3>
-        <p>Telephone: <a href="tel: +46737053500">+46 737 05 35 00</a></p>
-        <p>E-mail: <a href="mailto:jesper.ekerling@gmail.com">jesper.ekerling@gmail.com</a></p>
-        <img src="/img/products/bling-bling-dog-thumb.jpg" alt="Dog CEO">
-
-        <form>
-            <fieldset>
-            <legend>Send a woff to Dog CEO</legend>
-            <div class="form-div">
-                <label for="name">
-                    Name
-                </label>
-                <input type="text" placeholder="First and Last name" id="name">
-            </div>
-            <div class="form-div">
-                <label>
-                    E-mail
-                </label>
-                <input type="email" placeholder="Email address" id="email">
-            </div>
-            <div class="form-div">
-                <label for="message">
-                    Message
-                </label>
-                <textarea id="message" placeholder="Write your message here.."></textarea>
-            </div>
-            <div class="form-div">
-                <button type="submit" id="">Submit</button>
-            </div>
-        </fieldset>
-        </form>
-
-
+        <section id="product-view">
+            <img src="./img/products/bling-bling-dog-thumb.jpg" alt="Picture of Dog product">
+            <p class="product__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam recusandae perferendis autem error quaerat nesciunt quasi unde quas sit quod eum totam dolorum dolore explicabo at, enim ipsa voluptates tenetur.</p>
+            <span class="product__category">Small Dogs</span>
+            <span>$ 119</span>
+            <button>Add to basket</button>
+        </section>
     </main>
     <footer>
         <p>&copy; An <a href="https://ekerling.com/" target="_blank">ekerling.com</a> production</p>
