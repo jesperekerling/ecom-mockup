@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Page - Ecommerce website</title>
+    <title>Add Product Page - Ecommerce website</title>
     <link rel="stylesheet" href="./css/styles.css">
         
-    <meta name="description" content="View product page about PRODUCT NAME.">
+    <meta name="description" content="Add product to website (for admins)!">
     <meta name="keywords" content="">
 
-    <meta property="og:title" content="Product Page">
-    <meta property="og:description" content="View product page about PRODUCT NAME.">
-    <meta property="og:image" content="./img/products/bling-bling-dog-thumb.jpg">
-    <meta property="og:url" content="product.html">
+    <meta property="og:title" content="shop, dogs, super dogs shop, shop dogs">
+    <meta property="og:description" content="Add product to website (for admins)!">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
     <meta name="twitter:card" content="summary_large_image">
 
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -31,23 +31,70 @@
         </label>
         <ul class="menu">
             <li><a href="/">Home</a></li>
-            <li>Admin: <a href="/add-product.html">Add Product</a></li>
+            <li>Admin: <a href="/add-product.html" class="active">Add Product</a></li>
             <li><a href="about-us.html">About Us</a></li>
         </ul>
     </header>
     <main>
-        <h1>Product Page</h1>
-        <p>Mockup template for a E-commerce website.</p>
+        <h1>Add New Product</h1>
+        <p>Admin page for adding new products to the website.</p>
 
-        <h2>Products</h2>
+        <form>
+            <fieldset>
+                <legend>New Product Form</legend>
+                <div class="form-div">
+                    <label for="name">Product Name</label>
+                    <input id="name" type="text" placeholder="Product Name" autocomplete="name">
+                </div>
+                <div class="form-div">
+                    <label for="date">Product Release Date</label>
+                    <input id="date" name="date" type="date">
+                </div>
+                <div class="form-div">
+                    <label for="price">Product Price</label>
+                    <input id="price" name="prtice" type="number">
+                </div>
+                <div class="form-div">
+                    <label for="category">Product Category</label>
+                    <select name="category" id="category" id="category">
+                        <option value="first" selected>Super Dog</option>
+                        <option value="second">Cool Dog</option>
+                        <option value="third">Party Dog</option>
+                    </select>
+                </div>
+                <div class="form-div">
+                    <label for="message">
+                        Product Description
+                    </label>
+                    <textarea id="message" name="message" placeholder="Write your message here.." cols="50" rows="5"></textarea>
+                </div>
+                <div class="form-div">
+                    <label for="message">
+                        Product images
+                    </label>
+                    <span>Drag image into the darkblue areas.</span>
+                    <div class="upload-area">
+                        <div class="img-upload-area">
+                            <input type="file" accept=".jpg, .jpeg, .png" />
+                        </div>
+                        <div class="img-upload-area">
+                            <input type="file" accept=".jpg, .jpeg, .png" />
+                        </div>
+                        <div class="img-upload-area">
+                            <input type="file" accept=".jpg, .jpeg, .png" />
+                        </div>
+                        <div class="img-upload-area">
+                            <input type="file" accept=".jpg, .jpeg, .png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-div">
+                    <button type="submit" id="submit">Add Product</button>
+                </div>
+            </fieldset>
+        </form>
 
-        <section id="product-view">
-            <img src="./img/products/bling-bling-dog-thumb.jpg" alt="Picture of Dog product">
-            <p class="product__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam recusandae perferendis autem error quaerat nesciunt quasi unde quas sit quod eum totam dolorum dolore explicabo at, enim ipsa voluptates tenetur.</p>
-            <span class="product__category">Small Dogs</span>
-            <span>$ 119</span>
-            <button>Add to basket</button>
-        </section>
+        
     </main>
     <footer>
         <p>&copy; An <a href="https://ekerling.com/" target="_blank">ekerling.com</a> production</p>

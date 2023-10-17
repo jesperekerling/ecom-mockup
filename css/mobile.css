@@ -1,15 +1,17 @@
-@media only screen and (max-width: 600px) {
-  #products {
-    grid-template-columns: auto auto;
-    gap: 0;
-  }
-  .main-event {
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-  main {
-    padding: 0;
-  }
-}
+/* Error: Undefined variable.
+ *    ,
+ * 17 |         background-color: $primary-color;
+ *    |                           ^^^^^^^^^^^^^^
+ *    '
+ *   css\mobile.scss 17:27  root stylesheet */
 
-/*# sourceMappingURL=mobile.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 17 \2502          background-color: $primary-color;\d\a    \2502                            ^^^^^^^^^^^^^^\a    \2575 \a   css\\mobile.scss 17:27  root stylesheet";
+}

@@ -10,4 +10,13 @@
     main {
         padding: 0;
     }
+    .upload-area {
+        display: block;
+      }
+    .img-upload-area {
+        background-color: $primary-color;
+        width: 90%;
+        display: block;
+        margin: 1rem 0;
+    }
   }
