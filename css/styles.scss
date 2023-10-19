@@ -216,6 +216,10 @@ picture {
             border-radius: 1rem;
             margin: 2rem 0;
             font-size: 110%;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: $secondary-color;
         }
     }
 }
