@@ -60,7 +60,7 @@ a:hover {
 }
 
 a.active {
-  color: yellow;
+  color: #84ccdd;
 }
 
 #menu {
@@ -406,8 +406,8 @@ footer a {
   justify-content: space-between;
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #FFF;
-  height: 5rem;
-  padding: 1em;
+  height: 2rem;
+  padding: 2em 5rem;
 }
 
 .menu {
