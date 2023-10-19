@@ -23,6 +23,7 @@ header .logo-text {
   font-family: "Gabarito", sans-serif;
   font-size: 150%;
   font-weight: 800;
+  letter-spacing: 0.5px;
 }
 header svg {
   fill: #fff;
@@ -301,6 +302,9 @@ footer a {
 }
 
 @media only screen and (max-width: 800px) {
+  .top-nav {
+    padding: 2em 1rem;
+  }
   main {
     margin: 1rem;
     padding: 0;
@@ -364,6 +368,9 @@ footer a {
   }
 }
 @media only screen and (max-width: 400px) {
+  .top-nav {
+    padding: 2em 1rem !important;
+  }
   #products, .product-view {
     grid-template-columns: 1fr;
     gap: 1.5rem;
