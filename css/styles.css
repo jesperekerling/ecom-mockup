@@ -175,7 +175,7 @@ picture img {
 
 .product-view {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
 .product-view__product-images {

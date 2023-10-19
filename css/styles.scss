@@ -172,7 +172,7 @@ picture {
 }
 .product-view {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
     &__product-images {
         background-color: $white-color;
