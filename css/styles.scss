@@ -46,10 +46,10 @@ header a {
     padding: 2rem;
 }
 main {
-    padding: 3rem;
+    padding: 5rem;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #f7fdff;
+    background-color: $main-bg-color;
 }
 a {
     color: $link-color;
@@ -132,6 +132,7 @@ h1 {
         }
         &__price {
             color: #666;
+            font-weight: 600;
         }
         &__description {
             font-size: 0.9rem;
@@ -145,7 +146,7 @@ h1 {
         }
         button {
             margin-top: 1rem;
-            padding: 0.75rem 2.5rem;
+            padding: 0.75rem 1.65rem;
             background-color: $primary-color;
             border: 0;
             border-radius: 1rem;
@@ -188,7 +189,7 @@ h1 {
     display: inline-block;
 }
 footer {
-    margin: 2rem auto;
+    margin: 0 auto;
     padding: 4rem 0;
     text-align: center;
     letter-spacing: 1px;

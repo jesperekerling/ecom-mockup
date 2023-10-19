@@ -1,6 +1,8 @@
 @media only screen and (max-width: 700px) {
     main {
         margin: 1rem;
+        padding: 0;
+        background-color: unset;
     }
     #products {
         grid-template-columns: auto auto;
@@ -14,10 +16,6 @@
         grid-column-start: 1;
         grid-column-end: 2;
     }
-    main {
-        padding: 0;
-        background-color: unset;
-    }
     .upload-area {
         display: block;
       }
@@ -27,6 +25,9 @@
         display: block;
         margin: 1rem 0;
     }
+    #products .product button {
+        padding: 0.75rem 1.5rem;
+    }  
   }
   @media only screen and (max-width: 400px) {
     #products {

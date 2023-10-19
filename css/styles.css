@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-  background-color: #F1F8FD;
+  background-color: #e6f1f6;
   font-family: "Gabarito", Helvetica, Arial, sans-serif;
   color: #004368;
 }
@@ -45,10 +45,10 @@ header a {
 }
 
 main {
-  padding: 3rem;
+  padding: 5rem;
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #f7fdff;
+  background-color: #eefaff;
 }
 
 a {
@@ -135,6 +135,7 @@ h1 {
 }
 #products .product__price {
   color: #666;
+  font-weight: 600;
 }
 #products .product__description {
   font-size: 0.9rem;
@@ -148,11 +149,11 @@ h1 {
 }
 #products .product button {
   margin-top: 1rem;
-  padding: 0.75rem 2.5rem;
+  padding: 0.75rem 1.65rem;
   background-color: #004368;
   border: 0;
   border-radius: 1rem;
-  color: #F1F8FD;
+  color: #e6f1f6;
   font-weight: 800;
   letter-spacing: 0.5px;
   cursor: pointer;
@@ -176,7 +177,7 @@ h1 {
 .form-div button {
   padding: 1rem 2rem;
   background-color: #004368;
-  color: #F1F8FD;
+  color: #e6f1f6;
   border: 0;
 }
 
@@ -192,7 +193,7 @@ h1 {
 }
 
 footer {
-  margin: 2rem auto;
+  margin: 0 auto;
   padding: 4rem 0;
   text-align: center;
   letter-spacing: 1px;
@@ -211,6 +212,8 @@ footer a {
 @media only screen and (max-width: 700px) {
   main {
     margin: 1rem;
+    padding: 0;
+    background-color: unset;
   }
   #products {
     grid-template-columns: auto auto;
@@ -224,10 +227,6 @@ footer a {
     grid-column-start: 1;
     grid-column-end: 2;
   }
-  main {
-    padding: 0;
-    background-color: unset;
-  }
   .upload-area {
     display: block;
   }
@@ -236,6 +235,9 @@ footer a {
     width: 90%;
     display: block;
     margin: 1rem 0;
+  }
+  #products .product button {
+    padding: 0.75rem 1.5rem;
   }
 }
 @media only screen and (max-width: 400px) {
