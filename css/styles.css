@@ -203,6 +203,9 @@ picture img {
 .product-view__product-information p {
   margin: 0.75rem 0;
 }
+.product-view__product-information .name {
+  font-size: 190%;
+}
 .product-view__product-information .price {
   font-weight: 600;
   font-size: 150%;
