@@ -2,12 +2,12 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: "Gabarito";
+  font-family: "Gabarito", sans-serif;
 }
 
 body {
   background-color: #e6f1f6;
-  font-family: "Gabarito", Helvetica, Arial, sans-serif;
+  font-family: "Gabarito", sans-serif, Helvetica, Arial, sans-serif;
   color: #004368;
 }
 
@@ -20,7 +20,7 @@ header {
   border-bottom: 1px solid #f7fcff;
 }
 header .logo-text {
-  font-family: "Gabarito";
+  font-family: "Gabarito", sans-serif;
   font-size: 150%;
   font-weight: 800;
 }
@@ -122,7 +122,7 @@ picture img {
   line-height: 1.7;
   padding: 1.5rem;
   border-radius: 1rem;
-  box-shadow: 10px 10px 18px -10px #addffb;
+  box-shadow: 10px 10px 18px -10px #c5d1d8;
   width: calc(100% - 2rem);
 }
 #products .product:hover {
@@ -261,6 +261,11 @@ legend {
 
 .upload-area {
   display: block;
+}
+
+input[type=file] {
+  width: 80%;
+  color: #fff;
 }
 
 .img-upload-area {
