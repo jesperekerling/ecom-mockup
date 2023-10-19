@@ -27,18 +27,51 @@
   #products .product button {
     padding: 0.75rem 1.5rem;
   }
+  picture {
+    width: 100%;
+  }
+  picture img {
+    width: 100%;
+  }
+  fieldset {
+    width: calc(100% - 4rem);
+  }
+  textarea {
+    width: calc(100% - 2rem);
+  }
+  .form-div {
+    padding: 0;
+    margin: 1rem 0;
+  }
 }
 @media only screen and (max-width: 400px) {
   #products, .product-view {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
     width: unset;
   }
-  .product, .product-view {
+  .product-view {
+    grid-template-columns: 1fr;
+    gap: 0;
+    width: unset;
+  }
+  .product-view__product-images {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .product-view__product-information {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .product {
     width: calc(100% - 3rem) !important;
   }
-  .main-event, .product {
+  .main-event, .product, .product-view__product-images {
     grid-column-start: 1;
+    grid-column-end: 2 !important;
+  }
+  .product-view__product-information {
+    grid-column-start: 1 !important;
     grid-column-end: 2 !important;
   }
   main {
