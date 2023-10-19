@@ -267,6 +267,10 @@ legend {
   color: #e6f1f6;
   border: 0;
 }
+.form-div span {
+  margin: 0.75rem 0;
+  display: block;
+}
 
 .upload-area {
   display: block;

@@ -260,6 +260,10 @@ legend {
         color: $bg-color;
         border: 0;
     }
+    span {
+        margin: 0.75rem 0;
+        display: block;
+    }
 }
 .upload-area {
     display: block;
