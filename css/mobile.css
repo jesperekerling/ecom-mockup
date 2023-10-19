@@ -1,4 +1,4 @@
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   main {
     margin: 1rem;
     padding: 0;
@@ -42,6 +42,23 @@
   .form-div {
     padding: 0;
     margin: 1rem 0;
+  }
+  .product-view__product-information {
+    grid-column-start: 1 !important;
+    grid-column-end: 2 !important;
+  }
+  .product-view__product-images {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .product-view__product-information {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .product-view {
+    grid-template-columns: 1fr;
+    gap: 0;
+    width: unset;
   }
 }
 @media only screen and (max-width: 400px) {
