@@ -17,14 +17,16 @@ body {
 }
 header {
     background-color: $primary-color;
-    color: $bg-color;
     margin: 0;
     position: sticky;
     top: 0;
     z-index: 1;
-    display: flex;
-    padding: 1.3rem;
     border-bottom: 1px solid #f7fcff;
+    .logo-text {
+        font-family: "Gabarito";
+        font-size: 150%;
+        font-weight: 800;
+    }
     svg {
         fill: #fff;
         display: inline-block;
@@ -39,17 +41,15 @@ header a {
     text-decoration: none;
     text-transform: uppercase;
 }
-header .logo-text {
-    font-family: "Gabarito";
-    font-size: 150%;
-    font-weight: 800;
-}
 #logo a {
     text-decoration: none;
     padding: 2rem;
 }
 main {
     padding: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f7fdff;
 }
 a {
     color: $link-color;
@@ -79,8 +79,7 @@ h1 {
 #products {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 2rem;
-    max-width: 1000px;
+    gap: 4rem;
     margin: 0 auto;
     a:hover {
         color: $link-hover-color;
@@ -91,12 +90,14 @@ h1 {
     div {
         display: inline-grid;
         picture {
-            width: 100%;
+            aspect-ratio: 5/3;
             border-radius: 0.3rem;
-            height: 100%;
+            width: 100%;
+            object-fit: cover;
             img {
                 width: 100%;
-                height: 100%;
+                object-fit: cover;
+                aspect-ratio: 5/3;
             }
         }
     }
@@ -107,9 +108,10 @@ h1 {
     .product {
         background-color: #fff;
         line-height: 1.7;
-        padding: 1rem;
+        padding: 1.5rem;
         border-radius: 1rem;
         box-shadow: 10px 10px 18px -10px #addffb;
+        width: calc(100% - 2rem);
         &:hover {
             border-color: $primary-color;
             box-shadow: 10px 10px 18px -10px #8d8d8d;
@@ -119,7 +121,7 @@ h1 {
         }
         &__name {
             font-weight: bold;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             padding-bottom: 0.5rem;
             font-family: $secondary-font;
             font-weight: 800;

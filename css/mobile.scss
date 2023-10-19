@@ -1,7 +1,11 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
+    main {
+        margin: 1rem;
+    }
     #products {
         grid-template-columns: auto auto;
-        gap: 0;
+        gap: 1rem;
+        width: calc(100% - 2rem);
     }
     .main-event {
         grid-column-start: 1;
@@ -20,3 +24,17 @@
         margin: 1rem 0;
     }
   }
+  @media only screen and (max-width: 400px) {
+    #products {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        width: unset;
+    }
+    .product {
+        width: calc(100% - 2rem) !important;
+    }
+    .main-event, .product {
+        grid-column-start: 1;
+        grid-column-end: 2 !important;
+    }
+}

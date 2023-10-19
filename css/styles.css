@@ -13,14 +13,16 @@ body {
 
 header {
   background-color: #004368;
-  color: #F1F8FD;
   margin: 0;
   position: sticky;
   top: 0;
   z-index: 1;
-  display: flex;
-  padding: 1.3rem;
   border-bottom: 1px solid #f7fcff;
+}
+header .logo-text {
+  font-family: "Gabarito";
+  font-size: 150%;
+  font-weight: 800;
 }
 header svg {
   fill: #fff;
@@ -37,12 +39,6 @@ header a {
   text-transform: uppercase;
 }
 
-header .logo-text {
-  font-family: "Gabarito";
-  font-size: 150%;
-  font-weight: 800;
-}
-
 #logo a {
   text-decoration: none;
   padding: 2rem;
@@ -50,6 +46,9 @@ header .logo-text {
 
 main {
   padding: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f7fdff;
 }
 
 a {
@@ -81,8 +80,7 @@ h1 {
 #products {
   display: grid;
   grid-template-columns: auto auto auto;
-  gap: 2rem;
-  max-width: 1000px;
+  gap: 4rem;
   margin: 0 auto;
 }
 #products a:hover {
@@ -95,13 +93,15 @@ h1 {
   display: inline-grid;
 }
 #products div picture {
-  width: 100%;
+  aspect-ratio: 5/3;
   border-radius: 0.3rem;
-  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 #products div picture img {
   width: 100%;
-  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 5/3;
 }
 #products .main-event {
   grid-column-start: 1;
@@ -110,9 +110,10 @@ h1 {
 #products .product {
   background-color: #fff;
   line-height: 1.7;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 1rem;
   box-shadow: 10px 10px 18px -10px #addffb;
+  width: calc(100% - 2rem);
 }
 #products .product:hover {
   border-color: #004368;
@@ -123,7 +124,7 @@ h1 {
 }
 #products .product__name {
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   padding-bottom: 0.5rem;
   font-family: "Gabarito", sans-serif;
   font-weight: 800;
@@ -207,10 +208,14 @@ footer a {
   color: #84ccdd;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
+  main {
+    margin: 1rem;
+  }
   #products {
     grid-template-columns: auto auto;
-    gap: 0;
+    gap: 1rem;
+    width: calc(100% - 2rem);
   }
   .main-event {
     grid-column-start: 1;
@@ -227,6 +232,20 @@ footer a {
     width: 90%;
     display: block;
     margin: 1rem 0;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #products {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: unset;
+  }
+  .product {
+    width: calc(100% - 2rem) !important;
+  }
+  .main-event, .product {
+    grid-column-start: 1;
+    grid-column-end: 2 !important;
   }
 }
 /* Top menu from https://codepen.io/alvarotrigo/pen/ExwgbZv */
