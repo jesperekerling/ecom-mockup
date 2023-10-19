@@ -20,7 +20,6 @@
         display: block;
       }
     .img-upload-area {
-        background-color: $primary-color;
         width: 90%;
         display: block;
         margin: 1rem 0;
@@ -30,12 +29,12 @@
     }  
   }
   @media only screen and (max-width: 400px) {
-    #products {
+    #products, .product-view {
         grid-template-columns: 1fr;
         gap: 2rem;
         width: unset;
     }
-    .product {
+    .product, .product-view {
         width: calc(100% - 3rem) !important;
     }
     .main-event, .product {
