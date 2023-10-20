@@ -435,7 +435,7 @@ footer a {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #FFF;
   height: 2rem;
-  padding: 2em 5rem;
+  padding: 2em 3rem;
 }
 
 .menu {
@@ -449,6 +449,7 @@ footer a {
 .menu > li {
   margin: 0 1rem;
   overflow: hidden;
+  font-size: 1.1rem;
 }
 
 .menu-button-container {
