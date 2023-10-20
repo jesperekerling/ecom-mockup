@@ -39,6 +39,9 @@ header a {
   text-decoration: none;
   text-transform: uppercase;
 }
+header a:hover {
+  color: #84ccdd;
+}
 
 #logo a {
   text-decoration: none;
@@ -98,8 +101,12 @@ picture img {
 #products a:hover {
   color: #0b2155;
 }
-#products img:hover {
-  opacity: 0.8;
+#products img {
+  transition: transform 0.5s ease;
+}
+#products :hover img {
+  opacity: 0.9;
+  transform: scale(1.03);
 }
 #products div {
   display: inline-grid;
@@ -249,7 +256,7 @@ legend {
 }
 
 p {
-  font-size: 110%;
+  font-size: 120%;
   line-height: 1.7;
 }
 
@@ -433,7 +440,7 @@ footer a {
   align-items: center;
   justify-content: space-between;
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #FFF;
+  color: #fff;
   height: 2rem;
   padding: 2em 3rem;
 }
