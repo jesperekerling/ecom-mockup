@@ -13,7 +13,7 @@ html, body {
 body {
     background-color: $bg-color;
     font-family: $secondary-fonts, $primary-fonts;
-    color: $primary-color;
+    color: $body-color;
 }
 header {
     background-color: $primary-color;
@@ -56,7 +56,7 @@ a {
     color: $link-color;
 }
 a:hover {
-    color: $accent-color;
+    color: $body-color;
 }
 a.active {
     color: $accent-color;
@@ -93,7 +93,7 @@ picture {
     gap: 4rem;
     margin: 0 auto;
     a:hover {
-        color: $link-hover-color;
+        color: $body-color;
     }
     img:hover {
         opacity: 0.8;
@@ -226,7 +226,7 @@ picture {
             cursor: pointer;
         }
         button:hover {
-            background-color: $secondary-color;
+            background-color: $body-color;
         }
     }
 }
@@ -273,7 +273,7 @@ p {
         cursor: pointer;
     }
     button:hover {
-        background-color: $secondary-color;
+        background-color: $body-color;
     }
     span {
         margin: 0.75rem 0;

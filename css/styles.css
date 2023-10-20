@@ -8,7 +8,7 @@ html, body {
 body {
   background-color: #e6f1f6;
   font-family: "Gabarito", sans-serif, Helvetica, Arial, sans-serif;
-  color: #004368;
+  color: #0b2155;
 }
 
 header {
@@ -57,7 +57,7 @@ a {
 }
 
 a:hover {
-  color: #84ccdd;
+  color: #0b2155;
 }
 
 a.active {
@@ -96,7 +96,7 @@ picture img {
   margin: 0 auto;
 }
 #products a:hover {
-  color: darkblue;
+  color: #0b2155;
 }
 #products img:hover {
   opacity: 0.8;
@@ -231,7 +231,7 @@ picture img {
   cursor: pointer;
 }
 .product-view__product-information button:hover {
-  background-color: #0b0b0b;
+  background-color: #0b2155;
 }
 
 form {
@@ -281,7 +281,7 @@ p {
   cursor: pointer;
 }
 .form-div button:hover {
-  background-color: #0b0b0b;
+  background-color: #0b2155;
 }
 .form-div span {
   margin: 0.75rem 0;
